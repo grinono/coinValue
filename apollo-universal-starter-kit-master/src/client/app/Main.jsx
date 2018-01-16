@@ -1,5 +1,4 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
 import { getOperationAST } from 'graphql';
 import { createApolloFetch } from 'apollo-fetch';
 import { BatchHttpLink } from 'apollo-link-batch-http';
@@ -22,8 +21,7 @@ import RedBox from './RedBox';
 import createApolloClient from '../../common/createApolloClient';
 import createReduxStore, { storeReducer } from '../../common/createReduxStore';
 import settings from '../../../settings';
-import RoutesWeb from './Routes';
-// import RoutesFull from './routesFull';
+import Routes from './Routes';
 import modules from '../modules';
 
 const { hostname, pathname, port } = url.parse(__BACKEND_URL__);
@@ -181,12 +179,7 @@ export default class Main extends React.Component {
       modules.getWrappedRoot(
         <Provider store={store}>
           <ApolloProvider client={client}>
-            <ConnectedRouter history={history}>
-              <div>
-                <RoutesWeb />
-              </div>
-              {/* <Route path="/" name="Home" component={RoutesWeb} /> */}
-            </ConnectedRouter>
+            <ConnectedRouter history={history}>{Routes}</ConnectedRouter>
           </ApolloProvider>
         </Provider>
       )

@@ -7,8 +7,6 @@ import AppContainer from 'react-native-web/dist/apis/AppRegistry/AppContainer';
 // eslint-disable-next-line import/no-unresolved, import/no-extraneous-dependencies, import/extensions
 import 'backend_reload';
 
-import './scss/style.scss';
-
 import Main from './app/Main';
 import log from '../common/log';
 
