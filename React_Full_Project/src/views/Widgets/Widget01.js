@@ -1,6 +1,6 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Card, CardBlock, Progress} from "reactstrap";
+import {Card, CardBody, Progress} from 'reactstrap';
 import classNames from 'classnames';
 import {mapToCssModules} from 'reactstrap/lib/utils';
 
@@ -41,17 +41,17 @@ class Widget01 extends Component {
     }
 
     const classes = mapToCssModules(classNames(className, card.style, card.bgColor), cssModule);
-    progress.style = classNames("progress-xs my-1", progress.style);
+    progress.style = classNames("progress-xs my-3", progress.style);
 
     return (
       <Card className={ classes } {...attributes}>
-        <CardBlock className="card-body">
+        <CardBody>
           <div className="h4 m-0">{ header }</div>
           <div>{ mainText }</div>
           <Progress className={ progress.style } color={ progress.color } value={ progress.value }/>
           <small className="text-muted">{ smallText }</small>
           <div>{children}</div>
-        </CardBlock>
+        </CardBody>
       </Card>
     )
   }

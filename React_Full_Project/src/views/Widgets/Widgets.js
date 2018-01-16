@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import {Row, Col, CardGroup} from "reactstrap";
+import React, {Component} from 'react';
+import {Row, Col, CardGroup} from 'reactstrap';
 import Widget01 from './Widget01';
 import Widget02 from './Widget02';
 import Widget03 from './Widget03';
@@ -68,28 +68,28 @@ class Widgets extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs="12" sm="6" >
+          <Col xs="12" sm="6" lg="3">
             <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-cogs" color="primary" variant="1"/>
           </Col>
-          <Col xs="12" sm="6" >
+          <Col xs="12" sm="6" lg="3">
             <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-laptop" color="info" variant="1"/>
           </Col>
-          <Col xs="12" sm="6" >
+          <Col xs="12" sm="6" lg="3">
             <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-moon-o" color="warning" variant="1"/>
           </Col>
-          <Col xs="12" sm="6" >
+          <Col xs="12" sm="6" lg="3">
             <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-bell" color="danger" variant="1"/>
           </Col>
-          <Col xs="12" sm="6" >
+          <Col xs="12" sm="6" lg="3">
             <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-cogs" color="primary" variant="2"/>
           </Col>
-          <Col xs="12" sm="6" >
+          <Col xs="12" sm="6" lg="3">
             <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-laptop" color="info" variant="2"/>
           </Col>
-          <Col xs="12" sm="6" >
+          <Col xs="12" sm="6" lg="3">
             <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-moon-o" color="warning" variant="2"/>
           </Col>
-          <Col xs="12" sm="6" >
+          <Col xs="12" sm="6" lg="3">
             <Widget02 header="$1.999,50" mainText="Income" icon="fa fa-bell" color="danger" variant="2"/>
           </Col>
         </Row>
@@ -107,7 +107,7 @@ class Widgets extends Component {
             <Widget03 dataBox={() => ({variant: "google-plus", followers : "894", circles: "92"})}/>
           </Col>
         </Row>
-        <CardGroup>
+        <CardGroup className="mb-4">
           <Widget04 icon="icon-people" color="info" header="87.500" value="25">Visitors</Widget04>
           <Widget04 icon="icon-user-follow" color="success" header="385" value="25">New Clients</Widget04>
           <Widget04 icon="icon-basket-loaded" color="warning" header="1238" value="25">Products sold</Widget04>

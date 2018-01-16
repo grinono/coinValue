@@ -2,7 +2,7 @@ import React from 'react';
 import { SelectedFilters, ReactiveList } from '@appbaseio/reactivesearch';
 import PropTypes from 'prop-types';
 
-import Topic from './Topic';
+// import Topic from './Topic';
 
 const onResultStats = (results, time) => (
 	<div className="flex justify-end">
@@ -60,7 +60,7 @@ const Results = ({ toggleTopic, currentTopics }) => (
 			onData={data => onData(data, currentTopics, toggleTopic)}
 			onResultStats={onResultStats}
 			react={{
-				and: ['language', 'topics', 'pushed', 'created', 'stars', 'forks', 'repo'],
+				and: ['topics']
 			}}
 			pagination
 			innerClass={{

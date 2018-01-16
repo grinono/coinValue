@@ -13,10 +13,10 @@ export default {
       title: true,
       name: 'UI elements',
       wrapper: {            // optional wrapper object
-        element: "span",      // required valid HTML5 element tag
+        element: '',        // required valid HTML5 element tag
         attributes: {}        // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
       },
-      class: ""             // optional class names space delimited list for title item ex: "text-center"
+      class: ''             // optional class names space delimited list for title item ex: "text-center"
     },
     {
       name: 'Components',
@@ -133,6 +133,19 @@ export default {
           icon: 'icon-star'
         }
       ]
+    },
+    {
+      name: 'Download CoreUI',
+      url: 'http://coreui.io/react/',
+      icon: 'icon-cloud-download',
+      class: 'mt-auto',
+      variant: 'success'
+    },
+    {
+      name: 'Try CoreUI PRO',
+      url: 'http://coreui.io/pro/react/',
+      icon: 'icon-layers',
+      variant: 'danger'
     }
   ]
 };
