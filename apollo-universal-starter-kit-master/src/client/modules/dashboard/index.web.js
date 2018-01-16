@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import { MenuItem } from '../../modules/common/components/web';
-import '../../scss/style.scss';
 import Dashboard from './containers/dashboard';
 
 // import reducers from './reducers';

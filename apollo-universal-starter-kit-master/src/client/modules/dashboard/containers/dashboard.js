@@ -2,23 +2,33 @@ import React, {Component} from 'react'
 import {Row, Col} from 'reactstrap'
 
 // import Widget02 from '../Widgets/Widget02'
-import './styles.css'
-import CompanyData from './companyData'
-import Coin from './coin'
+import '../components/styles.css'
+import CompanyData from '../components/companyData'
+import Coin from '../components/coin'
+import Theme from '../../common/components/web/theme/combine'
 
+  // <Coin />
+  // <CompanyData />
 export default class Home extends Component {
   render () {
     return (
-      <div className='animated fadeIn'>
-        <Row>
-            <Coin />
-             <div className='col-8 fixed'>
-               <div className="sticky-top" style={{marginTop:0}}>
-                 <CompanyData />
-               </div>
-             </div>
-          </Row>
+      <div>
+        <Theme>
+          <div className='animated fadeIn'>
+            <div className="container-fluid h-100">
+              <div className="row">
+                <div className="col-4" id="left">
+                       <Coin />
+                </div>
+                <div className="col-8" id="right">
+                      <CompanyData />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Theme>
       </div>
+
     )
   }
 }
