@@ -9,6 +9,7 @@ import Footer from '../../components/Footer/';
 import Dashboard from '../../views/Dashboard/';
 import Charts from '../../views/Charts/';
 import Widgets from '../../views/Widgets/';
+import Home from '../../views/Home/main.js'
 
 // Components
 import Buttons from '../../views/Components/Buttons/';
@@ -32,9 +33,10 @@ class Full extends Component {
         <div className="app-body">
           <Sidebar {...this.props}/>
           <main className="main">
-            <Breadcrumb />
+            {/* <Breadcrumb /> */}
             <Container fluid>
               <Switch>
+                <Route path='/main' name='Home' component={Home}/>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Route path="/components/buttons" name="Buttons" component={Buttons}/>
                 <Route path="/components/cards" name="Cards" component={Cards}/>
@@ -52,9 +54,9 @@ class Full extends Component {
               </Switch>
             </Container>
           </main>
-          <Aside />
+          {/* <Aside /> */}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

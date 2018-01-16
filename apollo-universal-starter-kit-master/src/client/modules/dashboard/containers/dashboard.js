@@ -7,6 +7,7 @@ import CompanyData from '../components/companyData'
 import Coin from '../components/coin'
 import Theme from '../../common/components/web/theme/combine'
 
+
   // <Coin />
   // <CompanyData />
 export default class Home extends Component {
@@ -18,10 +19,10 @@ export default class Home extends Component {
             <div className="container-fluid h-100">
               <div className="row">
                 <div className="col-4" id="left">
-                       <Coin />
+                  <Coin />
                 </div>
                 <div className="col-8" id="right">
-                      <CompanyData />
+                  <CompanyData />
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ import Header from '../../components/Header/'
 import Sidebar from '../../components/Sidebar/'
 import Breadcrumb from '../../components/Breadcrumb/'
 import Aside from '../../components/Aside/'
-import Footer from '../../components/Footer/'
+// import Footer from '../../components/Footer/'
 import Dashboard from '../../views/Dashboard/'
 import Charts from '../../views/Charts/'
 import Widgets from '../../views/Widgets/'
@@ -56,7 +56,7 @@ class Full extends Component {
               </Switch>
             </Container>
           </main>
-          <Aside />
+          {/* <Aside /> */}
         </div>
         {/* <Footer /> */}
       </div>

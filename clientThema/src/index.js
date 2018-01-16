@@ -10,7 +10,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'simple-line-icons/css/simple-line-icons.css';
 // Import Main styles for this application
 
-
 // Containers
 import Full from './containers/Full/'
 
