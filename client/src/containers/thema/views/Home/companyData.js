@@ -10,7 +10,7 @@ export default class MainCompanyData extends Component {
         <Chart />
         <Row>
           <Col xs="12" sm="12" lg="12">
-            <Widget01 color="primary" variant="inverse" header="Company phase" mainText='2 phase' smallText='benchmark between same phases' />
+            <Widget01 color="primary" variant="inverse" header="Project phase" mainText='2 phase' smallText='benchmark between same phases' />
           </Col>
         </Row>
       </div>

@@ -21,3 +21,6 @@ if (module.hot) {
 
   module.hot.accept();
 }
+
+
+console.log('alles goed?')

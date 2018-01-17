@@ -10,14 +10,17 @@ export default class Home extends Component {
   render () {
     return (
       <div className='animated fadeIn'>
-        <Row>
-            <Coin />
-             <div className='col-8 fixed'>
-               <div className="sticky-top" style={{marginTop:0}}>
-                 <CompanyData />
-               </div>
-             </div>
-          </Row>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-4">
+                <Coin />
+              </div>
+              <div class="col-8">
+                  <CompanyData />
+              </div>
+
+            </div>
+        </div>
       </div>
     )
   }

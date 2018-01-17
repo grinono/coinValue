@@ -5,8 +5,9 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 export default class Rating extends Component {
   render () {
     return (
-      <div>
-        <ReactTypeformEmbed url={'https://bartel.typeform.com/to/fsgwiI'}/>
+      <div style={{width: '100%', height: 500, marginTop:100}}>
+        {/* <p>sdfsd</p> */}
+        <ReactTypeformEmbed opacity={'100%'} buttonText={'start'}  url={'https://bartel.typeform.com/to/fsgwiI'}/>
       </div>
     )
   }

@@ -22,7 +22,7 @@ import SimpleLineIcons from '../../views/Icons/SimpleLineIcons/'
 import Home from '../../views/Home/main.js'
 import Project from '../../views/Project/main.js'
 import Projects from '../../views/Projects/App'
-// import Rating from '../../views/Rating/main.js'
+import Review from '../../views/Review'
 // import Projects from '../../views/Main/App.js'
 
 class Full extends Component {
@@ -37,6 +37,7 @@ class Full extends Component {
             <div style={{marginTop:40}}></div>
             <Container fluid>
               <Switch>
+                <Route path='/review' name='review' component={Review}/>
                 <Route path='/projects' name='projects' component={Projects}/>
                 <Route path='/project/:id' name='project' component={Project}/>
                 <Route path='/main' name='Home' component={Home}/>

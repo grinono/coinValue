@@ -23,6 +23,7 @@ import {
   Table
 } from "reactstrap"
 import Video from './video'
+import ReviewICO from './reviewICO'
 
 const brandPrimary = '#20a8d8';
 const brandSuccess = '#4dbd74';
@@ -108,7 +109,14 @@ export default class Project extends Component {
   render () {
     return (
       <div className='animated fadeIn'>
-        <Video />
+        <Row>
+          <Col xs="12" md="8" xl="8">
+            <Video />
+          </Col>
+          <Col xs="12" md="4" xl="4">
+            <ReviewICO />
+          </Col>
+        </Row>
         <Row>
           <Col>
             <Card>
