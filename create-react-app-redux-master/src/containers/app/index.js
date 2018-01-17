@@ -4,10 +4,14 @@ import Home from '../home'
 import About from '../about'
 // import Login from '../thema/views/pages/login'
 import Login from '../thema/views/Pages/Login/'
+import FullRoutes from '../thema/containers/Full/Full'
+import '../../scss/style.css'
 
 const App = () => (
   <div>
-    <header>
+    <Route path="/" name="Home" component={FullRoutes}/>
+    {/* <FullRoutes /> */}
+    {/* <header>
       <Link to="/">Home</Link>
       <Link to="/about-us">About</Link>
       <Link to="/login">Login</Link>
@@ -17,7 +21,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route exact path="/about-us" component={About} />
       <Route exact path="/login" name="Login Page" component={Login}/>
-    </main>
+    </main> */}
   </div>
 )
 
