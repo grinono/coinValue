@@ -62,33 +62,10 @@ class Header extends Component {
           <NavItem className="px-3">
             <NavLink href="/">Dashboard</NavLink>
           </NavItem>
-          <NavItem className="px-3">
-            <ReactiveBase
-    					app="coincheck"
-    					credentials="UEaquBPZj:4e0025c5-7661-4b74-b801-4308066463d4"
-    					type="projects"
-    					// theme={theme}
-    				>
-    					<div className="flex row-reverse app-container">
-    						{/* <Header currentTopics={this.state.currentTopics} setTopics={this.setTopics} /> */}
-    						<div className="results-container">
-    							<DataSearch
-    								componentId="repo"
-    								filterLabel="Search"
-    								dataField={['name', 'description', 'name.raw', 'fullname', 'owner', 'topics']}
-    								placeholder="Search Coins"
-    								iconPosition="left"
-    								autosuggest={false}
-    								URLParams
-    								className="data-search-container results-container"
-    								innerClass={{
-    									input: 'search-input',
-    								}}
-    							/>
-    							{/* <Results currentTopics={this.state.currentTopics} toggleTopic={this.toggleTopic} /> */}
-    						</div>
-    					</div>
-    				</ReactiveBase>
+          <NavItem className="px-20">
+            <p>
+              Search
+            </p>
           </NavItem>
           {/* <NavItem className="px-3">
             <NavLink href="#">Users</NavLink>
