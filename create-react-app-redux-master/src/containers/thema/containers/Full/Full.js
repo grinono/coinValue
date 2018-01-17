@@ -21,6 +21,7 @@ import FontAwesome from '../../views/Icons/FontAwesome/'
 import SimpleLineIcons from '../../views/Icons/SimpleLineIcons/'
 import Home from '../../views/Home/main.js'
 import Project from '../../views/Project/main.js'
+import Projects from '../../views/Projects/App'
 // import Rating from '../../views/Rating/main.js'
 // import Projects from '../../views/Main/App.js'
 
@@ -37,6 +38,7 @@ class Full extends Component {
             <Container fluid>
               <Switch>
                 {/* <Route path='/projects/' name='projects' component={Projects}/> */}
+                {/* <Route path='/projects' name='project' component={Projects}/> */}
                 <Route path='/project/:id' name='project' component={Project}/>
                 <Route path='/main' name='Home' component={Home}/>
                 <Route path='/dashboard' name='Dashboard' component={Dashboard}/>
